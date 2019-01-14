@@ -9,8 +9,10 @@ pip3 install SQLAlchemy && \
 pip3 install xgboost && \
 pip3 install sklearn && \
 pip3 install flask && \
-pip3 install flask-restplus
+pip3 install flask-restplus && \
+pip3 install tornado
+
 
 MAINTAINER xhg@servyou
-LABEL version=0.4
+LABEL version=0.5
 LABEL description="python image for mlp"
