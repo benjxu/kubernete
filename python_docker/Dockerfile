@@ -10,9 +10,10 @@ pip3 install xgboost && \
 pip3 install sklearn && \
 pip3 install flask && \
 pip3 install flask-restplus && \
-pip3 install tornado
+pip3 install tornado && \
+pip3 install protobuf
 
 
 MAINTAINER xhg@servyou
-LABEL version=0.5
+LABEL version=0.6
 LABEL description="python image for mlp"
