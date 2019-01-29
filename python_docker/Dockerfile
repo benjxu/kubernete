@@ -12,8 +12,6 @@ pip3 install flask && \
 pip3 install flask-restplus && \
 pip3 install tornado && \
 pip3 install protobuf && \
-pip3 install tensorflow==1.12.0 && \
-pip3 install tensorflow-gpu==1.12.0 && \
 pip3 install elasticsearch
 
 
