@@ -56,3 +56,6 @@ RUN ${PIP} install elasticsearch
 
 COPY bashrc /etc/bash.bashrc
 RUN chmod a+rwx /etc/bash.bashrc
+
+RUN ln -s /usr/bin/python3 /usr/bin/python
+RUN ${PIP} install python-Levenshtein
