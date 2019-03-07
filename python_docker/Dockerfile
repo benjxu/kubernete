@@ -11,8 +11,9 @@ pip3 install sklearn && \
 pip3 install flask && \
 pip3 install flask-restplus && \
 pip3 install tornado && \
-pip3 install protobuf && \
-pip3 install elasticsearch
+pip3 install elasticsearch && \
+pip3 install cx_Oracle && \
+pip3 install protobuf
 
 
 MAINTAINER xhg@servyou
