@@ -22,9 +22,10 @@ pip3 install flask-restplus && \
 pip3 install tornado && \
 pip3 install elasticsearch && \
 pip3 install cx_Oracle && \
-pip3 install protobuf
+pip3 install protobuf && \
+pip3 install prometheus_client
 
 
 MAINTAINER xhg@servyou
-LABEL version=1.3
+LABEL version=1.4
 LABEL description="python image for mlp"
