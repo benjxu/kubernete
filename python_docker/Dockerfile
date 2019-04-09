@@ -22,9 +22,11 @@ pip3 install flask-restplus && \
 pip3 install tornado && \
 pip3 install elasticsearch && \
 pip3 install cx_Oracle && \
-pip3 install protobuf
+pip3 install protobuf && \
+pip3 install jieba && \
+pip3 install lightgbm
 
 
 MAINTAINER xhg@servyou
-LABEL version=1.3
+LABEL version=1.5
 LABEL description="python image for mlp"
