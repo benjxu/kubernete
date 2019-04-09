@@ -38,7 +38,7 @@ ENV ORACLE_HOME /opt/oracle/instantclient_11_2
 ENV LD_LIBRARY_PATH=$ORACLE_HOME
 
 COPY bashrc /etc/bash.bashrc
-COPY instantclient-basiclite-linux.x64-11.2.0.4.0.zip /
+ADD https://github.com/benjxu/kubernete/raw/master/instantclient-basiclite-linux.x64-11.2.0.4.0.zip /
 RUN apt-get update && apt-get install -y \
     ${PYTHON} \
     ${PYTHON}-pip && \
@@ -70,8 +70,7 @@ ${PIP} install jieba && \
 ${PIP} install lightgbm && \
 ${PIP} install jupyter notebook && \
 ${PIP} install python-Levenshtein
-RUN apt-get clean && \
-    rm -rf /var/lib/apt/lists/*
+RUN apt-get clean 
 
 MAINTAINER xhg@servyou.com.cn
 LABEL version=1.7
