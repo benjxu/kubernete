@@ -23,6 +23,7 @@ pip3 install tornado && \
 pip3 install elasticsearch && \
 pip3 install cx_Oracle && \
 pip3 install protobuf && \
+pip3 install prometheus_client && \
 pip3 install jieba && \
 pip3 install lightgbm
 
