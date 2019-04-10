@@ -69,9 +69,10 @@ ${PIP} install prometheus_client && \
 ${PIP} install jieba && \
 ${PIP} install lightgbm && \
 ${PIP} install jupyter notebook && \
+${PIP} install kafka-python && \
 ${PIP} install python-Levenshtein
 RUN apt-get clean 
 
 MAINTAINER xhg@servyou.com.cn
-LABEL version=1.7
+LABEL version=2.0
 LABEL description="python image for mlp"
