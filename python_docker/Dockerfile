@@ -70,7 +70,9 @@ ${PIP} install jieba && \
 ${PIP} install lightgbm && \
 ${PIP} install jupyter notebook && \
 ${PIP} install kafka-python && \
-${PIP} install python-Levenshtein
+${PIP} install python-Levenshtein && \
+${PIP} install pyodps
+
 RUN apt-get clean 
 
 MAINTAINER xhg@servyou.com.cn
