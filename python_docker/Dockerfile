@@ -71,7 +71,7 @@ ${PIP} install lightgbm && \
 ${PIP} install jupyter notebook && \
 ${PIP} install kafka-python && \
 ${PIP} install python-Levenshtein && \
-${PIP} install pytorch && \
+${PIP} install torch torchvision && \
 ${PIP} install pyodps
 
 RUN apt-get clean 
