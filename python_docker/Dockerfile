@@ -53,7 +53,6 @@ ln -s /usr/bin/python3 /usr/bin/python && \
 unzip "/instantclient*.zip" -d /opt/oracle && \
 ln -s $ORACLE_HOME/libclntsh.so.11.1 $ORACLE_HOME/libclntsh.so && \
 ${PIP} install ${TF_PACKAGE}==1.8.0 && \
-${PIP} install tensorflow && \
 ${PIP} install pandas && \
 ${PIP} install pymysql && \
 ${PIP} install SQLAlchemy && \
