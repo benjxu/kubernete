@@ -61,7 +61,7 @@ ${PIP} install sklearn && \
 ${PIP} install flask && \
 ${PIP} install flask-restplus && \
 ${PIP} install tornado && \
-${PIP} install elasticsearch6 && \
+${PIP} install "elasticsearch>=6.0.0,<7.0.0" && \
 ${PIP} install cx_Oracle && \
 ${PIP} install protobuf && \
 ${PIP} install prometheus_client && \
