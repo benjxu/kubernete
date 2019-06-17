@@ -73,6 +73,7 @@ ${PIP} install python-Levenshtein && \
 ${PIP} install torch torchvision && \
 ${PIP} install xlrd && \
 ${PIP} install lime && \
+${PIP} install requests && \
 ${PIP} install pyodps
 
 RUN apt-get clean 
