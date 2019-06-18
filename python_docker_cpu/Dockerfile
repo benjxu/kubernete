@@ -52,4 +52,4 @@ RUN apt-get clean
 
 MAINTAINER xhg@servyou.com.cn
 LABEL version=3.0
-LABEL description="python image for mlp"
+LABEL description="python image cpu version"
