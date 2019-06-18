@@ -9,7 +9,6 @@ ARG TF_PACKAGE=tensorflow
 ENV ORACLE_HOME /opt/oracle/instantclient_11_2
 ENV LD_LIBRARY_PATH=$ORACLE_HOME
 
-COPY bashrc /etc/bash.bashrc
 ADD https://github.com/benjxu/kubernete/raw/master/instantclient-basiclite-linux.x64-11.2.0.4.0.zip /
 RUN apt-get update && apt-get install -y \
     ${PYTHON} \
@@ -19,7 +18,6 @@ RUN apt-get update && apt-get install -y \
     setuptools
 
 RUN \
-chmod a+rwx /etc/bash.bashrc && \
 mkdir -p /opt/oracle && \
 ln -s /usr/bin/python3 /usr/bin/python && \
 unzip "/instantclient*.zip" -d /opt/oracle && \
