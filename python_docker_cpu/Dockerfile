@@ -1,5 +1,6 @@
 FROM ubuntu:16.04
-
+RUN apt-get update && \
+        apt-get install unzip
 ARG USE_PYTHON_3_NOT_2=True
 ARG _PY_SUFFIX=${USE_PYTHON_3_NOT_2:+3}
 ARG PYTHON=python${_PY_SUFFIX}
