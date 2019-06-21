@@ -73,7 +73,7 @@ ${PIP} install xlrd && \
 ${PIP} install lime && \
 ${PIP} install requests && \
 ${PIP} install jieba && \
-${PIP} install pyhive && \
+${PIP} install sasl,thrift,pyhive,thrift_sasl && \
 ${PIP} install pyodps
 
 RUN apt-get clean 
