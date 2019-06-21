@@ -45,6 +45,8 @@ ${PIP} install torch torchvision && \
 ${PIP} install xlrd && \
 ${PIP} install lime && \
 ${PIP} install requests && \
+${PIP} install jieba && \
+${PIP} install pyhive && \
 ${PIP} install pyodps
 
 RUN apt-get clean 
