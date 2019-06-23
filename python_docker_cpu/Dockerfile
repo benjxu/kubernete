@@ -13,6 +13,7 @@ ENV LD_LIBRARY_PATH=$ORACLE_HOME
 ADD https://github.com/benjxu/kubernete/raw/master/instantclient-basiclite-linux.x64-11.2.0.4.0.zip /
 RUN apt-get update && apt-get install -y \
     ${PYTHON} \
+	libsasl2-dev \
     ${PYTHON}-pip && \
 	${PIP} install --upgrade \
     pip \
