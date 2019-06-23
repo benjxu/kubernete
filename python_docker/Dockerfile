@@ -9,6 +9,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         cuda-curand-9-0 \
         cuda-cusolver-9-0 \
         cuda-cusparse-9-0 \
+		libsasl2-dev \
         libcudnn7=7.2.1.38-1+cuda9.0 \
         libnccl2=2.2.13-1+cuda9.0 \
         libfreetype6-dev \
