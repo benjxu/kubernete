@@ -81,6 +81,5 @@ ${PIP} install pyodps
 
 RUN apt-get clean 
 
-MAINTAINER xhg@servyou.com.cn
 LABEL version=2.0
 LABEL description="python image for mlp"
