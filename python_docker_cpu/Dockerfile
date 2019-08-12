@@ -15,6 +15,8 @@ RUN apt-get update && apt-get install -y \
     ${PYTHON} \
 	libsasl2-modules \
 	libsasl2-dev \
+	libsasl2-2 \
+	libsasl2-modules-gssapi-mit \
     ${PYTHON}-pip && \
 	${PIP} install --upgrade \
     pip \
