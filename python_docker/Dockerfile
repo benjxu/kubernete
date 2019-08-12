@@ -11,6 +11,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         cuda-cusparse-9-0 \
 		libsasl2-dev \
 		libsasl2-modules \
+		libsasl2-2 \
+		libsasl2-modules-gssapi-mit \
         libcudnn7=7.2.1.38-1+cuda9.0 \
         libnccl2=2.2.13-1+cuda9.0 \
         libfreetype6-dev \
