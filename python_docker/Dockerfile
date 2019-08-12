@@ -78,6 +78,7 @@ ${PIP} install jieba && \
 ${PIP} install sasl thrift pyhive thrift_sasl && \
 ${PIP} install redis && \
 ${PIP} install uwsgi && \
+${PIP} install keras && \
 ${PIP} install pyodps
 
 RUN apt-get clean 
