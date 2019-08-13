@@ -17,6 +17,7 @@ RUN apt-get update && apt-get install -y \
 	libsasl2-dev \
 	libsasl2-2 \
 	libsasl2-modules-gssapi-mit \
+	krb5-user \
     ${PYTHON}-pip && \
 	${PIP} install --upgrade \
     pip \
