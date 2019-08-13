@@ -12,6 +12,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 		libsasl2-dev \
 		libsasl2-modules \
 		libsasl2-2 \
+		krb5-user \
 		libsasl2-modules-gssapi-mit \
         libcudnn7=7.2.1.38-1+cuda9.0 \
         libnccl2=2.2.13-1+cuda9.0 \
