@@ -1,5 +1,7 @@
 FROM nvidia/cuda:9.0-base-ubuntu16.04
-
+ENV DEBIAN_FRONTEND=noninteractive
+ENV ORACLE_HOME /opt/oracle/instantclient_11_2
+ENV LD_LIBRARY_PATH=$ORACLE_HOME
 # Pick up some TF dependencies
 RUN apt-get update && apt-get install -y --no-install-recommends \
         build-essential \
@@ -39,8 +41,6 @@ ARG PYTHON=python${_PY_SUFFIX}
 ARG PIP=pip${_PY_SUFFIX}
 ARG TF_PACKAGE=tensorflow-gpu
 
-ENV ORACLE_HOME /opt/oracle/instantclient_11_2
-ENV LD_LIBRARY_PATH=$ORACLE_HOME
 
 ADD https://github.com/benjxu/kubernete/raw/master/instantclient-basiclite-linux.x64-11.2.0.4.0.zip /
 RUN apt-get update && apt-get install -y \
