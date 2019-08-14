@@ -9,6 +9,7 @@ ARG TF_PACKAGE=tensorflow
 
 ENV ORACLE_HOME /opt/oracle/instantclient_11_2
 ENV LD_LIBRARY_PATH=$ORACLE_HOME
+ENV DEBIAN_FRONTEND=noninteractive
 
 ADD https://github.com/benjxu/kubernete/raw/master/instantclient-basiclite-linux.x64-11.2.0.4.0.zip /
 RUN apt-get update && apt-get install -y \
