@@ -56,6 +56,8 @@ ${PIP} install sasl thrift pyhive thrift_sasl && \
 ${PIP} install redis && \
 ${PIP} install uwsgi && \
 ${PIP} install keras && \
+${PIP} install skater && \
+${PIP} install dill && \
 ${PIP} install pyodps
 
 RUN apt-get clean 
