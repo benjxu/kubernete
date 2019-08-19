@@ -19,6 +19,7 @@ RUN apt-get update && apt-get install -y \
 	libsasl2-2 \
 	libsasl2-modules-gssapi-mit \
 	krb5-user \
+	libaio1 \
     ${PYTHON}-pip && \
 	${PIP} install --upgrade \
     pip \
