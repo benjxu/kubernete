@@ -84,6 +84,8 @@ ${PIP} install uwsgi && \
 ${PIP} install keras && \
 ${PIP} install skater && \
 ${PIP} install dill && \
+${PIP} install xlwt && \
+${PIP} install openpyxl && \
 ${PIP} install pyodps
 
 RUN apt-get clean 
