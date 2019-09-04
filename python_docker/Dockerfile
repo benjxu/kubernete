@@ -43,6 +43,7 @@ ARG TF_PACKAGE=tensorflow-gpu
 
 
 ADD https://github.com/benjxu/kubernete/raw/master/instantclient-basiclite-linux.x64-11.2.0.4.0.zip /
+ADD https://github.com/cdr/code-server/releases/download/1.1156-vsc1.33.1/code-server1.1156-vsc1.33.1-linux-x64.tar.gz /
 RUN apt-get update && apt-get install -y \
     ${PYTHON} \
     ${PYTHON}-pip && \
@@ -54,6 +55,7 @@ RUN \
 mkdir -p /opt/oracle && \
 ln -s /usr/bin/python3 /usr/bin/python && \
 unzip "/instantclient*.zip" -d /opt/oracle && \
+unzip "/code-server*.zip" -d /opt/code-server && \
 ln -s $ORACLE_HOME/libclntsh.so.11.1 $ORACLE_HOME/libclntsh.so && \
 ${PIP} install ${TF_PACKAGE}==1.8.0 && \
 ${PIP} install pandas && \
@@ -86,6 +88,7 @@ ${PIP} install skater && \
 ${PIP} install dill && \
 ${PIP} install xlwt && \
 ${PIP} install openpyxl && \
+${PIP} install jupyterlab && \
 ${PIP} install pyodps
 
 RUN apt-get clean 
