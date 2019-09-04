@@ -53,9 +53,10 @@ RUN apt-get update && apt-get install -y \
 
 RUN \
 mkdir -p /opt/oracle && \
+mkdir -p /opt/code-server && \
 ln -s /usr/bin/python3 /usr/bin/python && \
 unzip "/instantclient*.zip" -d /opt/oracle && \
-unzip "/code-server*.zip" -d /opt/code-server && \
+tar -zxf /code-server*.tar.gz /opt/code-server && \
 ln -s $ORACLE_HOME/libclntsh.so.11.1 $ORACLE_HOME/libclntsh.so && \
 ${PIP} install ${TF_PACKAGE}==1.8.0 && \
 ${PIP} install pandas && \
