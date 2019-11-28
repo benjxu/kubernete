@@ -65,7 +65,8 @@ ${PIP} install dill && \
 ${PIP} install xlwt && \
 ${PIP} install openpyxl && \
 ${PIP} install jupyterlab && \
-${PIP} install pyodps
+${PIP} install pyodps && \
+${PIP} install redis-py-cluster
 
 RUN apt-get clean 
 
