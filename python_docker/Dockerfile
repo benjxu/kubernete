@@ -91,7 +91,9 @@ ${PIP} install xlwt && \
 ${PIP} install openpyxl && \
 ${PIP} install jupyterlab && \
 ${PIP} install pyodps && \
-${PIP} install redis-py-cluster
+${PIP} install redis-py-cluster && \
+${PIP} install psycopg2-binary && \
+${PIP} install catboost
 
 RUN apt-get clean 
 
